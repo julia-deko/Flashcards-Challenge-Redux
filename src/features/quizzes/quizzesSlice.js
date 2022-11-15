@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { act } from "react-dom/test-utils";
 import { addQuizIdForTopic } from "../topics/topicSlice";
 
-const quizzesSlice = createSlice({
+export const quizzesSlice = createSlice({
     name: "quizzes",
     initialState: {
         quizzes: {}
@@ -23,5 +22,5 @@ export const addQuizForTopicId = (quiz) => {
 };
 
 export const selectQuizzes = (state) => state.quizzes.quizzes;
-export const { addQuiz } = quizzes.actions;
-export const quizzesReducer = quizzes.reducer();
+export const { addQuiz } = quizzesSlice.actions;
+export const quizzesReducer = quizzesSlice.reducer;
