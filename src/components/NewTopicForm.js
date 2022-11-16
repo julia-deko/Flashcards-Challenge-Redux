@@ -37,7 +37,7 @@ export default function NewTopicForm() {
           />
           <select
             onChange={(e) => setIcon(e.currentTarget.value)}
-            required
+            required={true}
             defaultValue="default"
           >
             <option value="default" disabled hidden>

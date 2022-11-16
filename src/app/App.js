@@ -10,7 +10,7 @@ import NewQuizForm from "../components/NewQuizForm";
 import NewTopicForm from "../components/NewTopicForm";
 import Topics from "../features/topics/Topics";
 import Topic from "../features/topics/Topic";
-import Quiz from "../features/quizzes/Quiz";
+import Quiz from "../features/quizzes/QuizPage";
 import Quizzes from "../features/quizzes/Quizzes";
 import ROUTES from "./routes";
 
